@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login"
+        <div>
+          <h3>Login Form</h3>
+          
+        </div>
+        
+        <form method="post">
+          <label for="fname"> First Name : </label>
+          <input
+            type="text"
+            placeholder="Enter firstname"
+            name="fname"
+            required
+          />
+          <label for="mail">Email : </label>
+          <input
+            type="email"
+            placeholder="Enter Email"
+            name="mail"
+            required
+            pattern="^[^\s@]+@[^\s@]+\.[^\s@]+$"
+          />
+          <label for="psword">Password : </label>
+          <input
+            type="password"
+            placeholder="Password"
+            name="psword"
+            required
+            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$"
+           />
+          <button id="sbutton" onclick="">submit</button>
+        </form>
+      </div>
+    </div>
+    <script>
+    document.querySelector('form').addEventListener ("submit", function(e){
+     e.preventDefault()
+    const fname = document.querySelector('input[name="fname"]').value.trim()
+    const mail = document.querySelector('input[name="mail"]').value.trim()
+    const psword = document.querySelector('input[name="psword"]').value.trim()
+
+    console.log("first name :",fname);
+    console.log("Email :",mail);
+    console.log("password :",psword);
+    
+    if (fname && mail && psword){
+       window.location.href="msg.html"   
+    }else{
+        alert("your form not submited")
+    }
+       })
+
+       
+    </script>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+.container {
+  width: 30%;
+  height: 38%;
+  margin-top: 300px;
+  margin-left: 33%;
+  padding: 10px;
+  justify-items: center;
+  box-shadow: 0px 0px 4px 2px rgb(237, 238, 236);
+  border-radius: 5px;
+  overflow: hidden;
+  font-size: larger;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccccccfc;
+  box-sizing: border-box;
+  font-size: medium;
+  outline: none;
+  background-color: rgba(205, 202, 202, 0.604);
+}
+.login {
+  margin: 25px 0;
+}
+h3{
+  text-align: center;
+  /* border-bottom: 2px solid black;
+  padding-bottom: 4px;
+  margin-bottom: 10px; */
+}
+button {
+  padding: 10px 70px;
+  margin-left: 180px;
+  margin-top: 5px;
+  font-size: larger;
+  border-radius: 10px;
+  background-color: rgb(19, 20, 20);
+  color: aliceblue;
+  border: none;
+}

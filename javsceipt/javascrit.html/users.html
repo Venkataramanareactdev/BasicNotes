@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userslist=[
+            {name:"raju", age:13},
+            {name:"srinu", age: 37},
+            {name:"ramu", age:26}
+        ]
+        let names = userslist.map(uname => uname.name)
+
+        console.log(names);
+        
+        let ages = userslist.filter(uages =>uages.age >18 )
+        console.log(ages);
+
+      
+        let first21 = userslist.find(user => user.age > 21);
+        console.log(first21);
+
+        
+
+
+
+    </script>
+</body>
+</html>
