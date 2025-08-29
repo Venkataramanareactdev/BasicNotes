@@ -26,13 +26,17 @@ We need a simple state management solution.
 We component has state that changes over time.
 The state does not require complex updates or dependencies.
 
-Performance Considerations
+Performance Considerations:
+
 Avoid Re-Rendering Issues: useState updates the state asynchronously,
 which may cause unnecessary re-renders. To optimize this we can use functional 
 updates for dependent state changes.
 Optimize Large Component States: For complex states, 
 use useReducer instead of useState to prevent unnecessary re-renders 
 and improve performance.
+
+
+useEffect:
 
 The useEffect hook is one of the most commonly used hooks in ReactJS, 
 used to handle side effects in functional components. Before hooks, 
