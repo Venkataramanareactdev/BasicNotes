@@ -6,9 +6,14 @@
 </head>
 <body>
     <script>
-    const numbers = [1, 2, 3, 4];
+const numbers = [1, 2, 3, 4];
 const doubled = numbers.map(num => num * num);
 console.log(doubled);
+
+const increasenum = [10, 20, 25, 30];
+const incnum = increasenum.map(num => num * 2).filter(num => num >= 40)  ;
+console.log(incnum);
+
 </script>
 
 

@@ -1,15 +1,19 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        const evenNumbers = [10, 15, 20, 25, 30];
-        const Enumber = evenNumbers.filter(num => num % 2===0)
-        console.log(Enumber);
-        
+      const evenNumbers = [10, 15, 20, 25, 30];
+      const Enumber = evenNumbers.filter((num) => num % 2 === 0);
+      console.log(Enumber);
+
+      const nums = [10, 20, 25, 30];
+      const result = nums.map((num) => num * 2).filter((num) => num > 40);
+
+      console.log(result);
     </script>
-</body>
+  </body>
 </html>
