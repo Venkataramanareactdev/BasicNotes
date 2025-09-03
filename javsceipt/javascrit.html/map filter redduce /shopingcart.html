@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+/*         const cart =[
+           {name:'shirt', price:950, instock:true},
+          {name:'shoes', price:850, instock:false},
+        {name:'jeans', price:850, instock:true},
+        {name: "iphone" , price:45000, instock:false}
+        ]
+        const items= cart.map(item => item.price * 0.9); 
+        const instaockItems = cart.filter((iteam)=> iteam.instock);
+        console.log(items);
+     const total = items.reduce((total, item)=> total + item, 0);
+     console.log(total); */
+
+     const cart = [
+  { name: "Shirt", price: 950, instock: true },
+  { name: "Shoes", price: 850, instock: false },
+  { name: "Jeans", price: 850, instock: true },
+  { name: "iPhone", price: 45000, instock: false }
+];
+
+// 1. Filter items in stock
+const inStock = cart.filter(item => item.instock);
+
+// 2. Apply 10% discount
+const discounted = inStock.map(item => ({
+  name: item.name,
+  discountedPrice: (item.price * 0.9).toFixed(2)  // keep 2 decimals
+}));
+
+console.log("Discounted Items:", discounted);
+// [{name:"Shirt", discountedPrice:"855.00"}, {name:"Jeans", discountedPrice:"765.00"}]
+
+// 3. Calculate total
+const total = discounted.reduce((sum, item) => sum + parseFloat(item.discountedPrice), 0);
+
+console.log("Total Bill:", total); // 1620
+
+    </script>
+</body>
+</html>
