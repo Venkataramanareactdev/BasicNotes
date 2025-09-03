@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const Extractnames = [
+         {name: "Aman"},
+         {name: "Meera"},
+         {name: "Raj"}]
+            const names = Extractnames.map((Extractnames)=> Extractnames.name); 
+            console.log(names);
+
+            const addtax = [100, 200, 300];
+            const tax1 = addtax.map(price => Number((price * 1.10).toFixed(2))); //toFixed (returns string, so convert to Number)
+            // const tax2 = addtax.map(price => Math.round(price * 1.10)); Math.round() rounds to nearest integer. 
+            console.log(tax1);
+
+            const celsius = [0, 20, 30];
+            const fahrenheit = celsius.map(c => Number((c * 9/5 + 32)));
+            console.log(fahrenheit);
+    </script>
+</body>
+</html>
