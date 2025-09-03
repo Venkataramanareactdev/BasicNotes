@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       const sum = [10, 20, 30, 40];
+       const total = sum.reduce((a,c)=>a + c);
+    console.log(total);
+    
+
+    const number = [12, 45, 7, 34, 89, 23];
+    const max = number.reduce((value,cvalue)=> (value>cvalue ? value : cvalue));
+    console.log(max);
+
+    const cart = [
+  { item:"Shirt", price:500 },
+  { item:"Shoes", price:1200 },
+  { item:"Jeans", price:800 }
+];
+const totalPrice = cart.reduce((acc, curr) => acc + curr.price, 0);
+console.log(totalPrice);
+
+const votes = ['yes', 'no', 'yes', 'yes', 'no'];
+const voteCount = votes.reduce((acc, vote) => {
+  if (vote === 'yes') {
+    acc.yes += 1;
+  } else {
+    acc.no += 1;
+  }
+  return acc;
+}, { yes: 0, no: 0 });
+console.log(voteCount);
+    </script>
+</body>
+</html>

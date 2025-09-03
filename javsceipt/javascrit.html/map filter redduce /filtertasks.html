@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const marks = [35, 60, 75, 20, 90];
+        const pmarks = marks.filter((marks)=> marks>=40);
+        console.log(pmarks);
+
+        const Enumbers = [10, 15, 20, 25, 30];
+        const EvenNumbers= Enumbers.filter((Enumbers)=>Enumbers %2 ===0);
+        console.log(EvenNumbers);
+
+        const products = [
+           {name:"Shirt", inStock:true},
+           {name:"Shoes", inStock:false},
+           {name:"Jeans", inStock:true}
+        ];
+        const stock = products.filter((product)=> product.inStock === true);
+        console.log(stock);
+        
+        </script>
+</body>
+</html>
