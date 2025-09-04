@@ -11,9 +11,9 @@
     setTimeout(() => {
       let balance = 2000;
       if (amount <= balance) {
-        resolve(`✅ Withdrawn ₹${amount}, Remaining: ₹${balance - amount}`);
+        resolve(`Withdrawn ₹${amount}, Remaining: ₹${balance - amount}`);
       } else {
-        reject("❌ Insufficient balance!");
+        reject("Insufficient balance!");
       }
     }, 1500);
   });
@@ -21,7 +21,7 @@
 
 async function atm() {
   try {
-    console.log("⏳ Processing...");
+    console.log("Processing...");
     const result = await withdraw(1500);
     console.log(result);
   } catch (error) {
