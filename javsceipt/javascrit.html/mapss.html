@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const items = [23,2,12,32,11]
+        const price = items.map((prices)=> prices * 0.9);
+        console.log(price);
+        
+
+        const cartitems =[
+            {Pname : "shirts", itemstock:true},
+            {Pname : "jeans", itemstock:false},
+            {Pname : "shoes", itemstock:true},
+            {Pname :"T-shirts", itemstock:false}
+        ]
+
+        const item = cartitems.filter((citems)=> citems.itemstock === true);
+        console.log(item);
+        
+    </script>
+</body>
+</html>
