@@ -25,7 +25,28 @@
         const numbers = [1, 2, 3, 4, 5];
         console.log(numbers.slice(1, 4)); // [2, 3, 4]   
 
-        
+        const student = {
+        name: 'mahesh',
+        age: 20,
+        subjects: ['Math', 'Physics'],
+        address: {
+        city: 'Mumbai',
+        postalCode: '400001'
+  }
+};
+
+// Access data
+console.log(student.name);        // mahesh
+console.log(student.address.city); // Mumbai
+
+// Add subject
+student.subjects.push('Chemistry');
+console.log(student.subjects); // ['Math', 'Physics', 'Chemistry']
+
+// Change city
+student.address.city = 'Pune';
+console.log(student.address.city); // Pune
+
     </script>
 </body>
 </html>
